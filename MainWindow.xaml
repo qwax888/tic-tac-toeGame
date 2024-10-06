@@ -1,0 +1,43 @@
+﻿<Window x:Class="TIC_TAC_TOE_GAME_.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TIC_TAC_TOE_GAME_"
+        mc:Ignorable="d"
+        Background="#282424"
+        Title="MainWindow" Height="412" Width="592">
+    <Grid Margin="0,0,0,-6">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="73*"/>
+            <ColumnDefinition Width="223*"/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="next_move" Content="The next move :" Margin="230,27,0,308" Grid.Column="1" 
+                 Foreground="White" FontSize="24" FontWeight="Bold" ></Label>
+        <Label x:Name="CurrentPlayer" RenderTransformOrigin="1.105,0.522" Margin="269,88,23,226" 
+               Foreground="White" FontSize="24"
+               FontFamily="Times New Roman" FontWeight="Bold" Grid.Column="1"></Label>
+        <Button x:Name="Cell1" Click="Cell1_Click" Margin="42,71,442,246" Grid.ColumnSpan="2">
+
+        </Button>
+
+        <Button x:Name="Cell2" Click="Cell1_Click" Margin="8,71,328,247" Grid.Column="1" />
+        <Button x:Name="Cell3" Click="Cell1_Click" Margin="122,71,216,246" Grid.Column="1" />
+        <Button x:Name="Cell4" Click="Cell1_Click" Margin="42,160,442,157" Grid.ColumnSpan="2" />
+        <Button x:Name="Cell5" Click="Cell1_Click" Margin="9,160,329,157" Grid.Column="1" />
+        <Button x:Name="Cell6" Click="Cell1_Click" Margin="122,160,216,157" Grid.Column="1" />
+        <Button x:Name="Cell9" Click="Cell1_Click" Margin="122,250,216,67" Grid.Column="1"/>
+        <Button x:Name="Cell7" Click="Cell1_Click" Margin="42,250,442,67" Grid.ColumnSpan="2" />
+        <Button x:Name="Cell8" Click="Cell1_Click" Margin="9,250,329,67" Grid.Column="1" />
+        <Button x:Name="Restart" Click="RestartButton" Margin="258,210,12,109" Background="#FF1A0056" Content="RESTART" Grid.Column="1" />
+        <TextBox x:Name="TextBox1"  Margin="123,335,312,15" FontSize="24" FontWeight="Bold" Grid.ColumnSpan="2" TextChanged="TextBox1_TextChanged"></TextBox>
+        <TextBox x:Name="TextBox2" Margin="257,335,31,15" FontSize="24" FontWeight="Bold" Grid.Column="1"/>
+        <Label Content="Player 1:" Margin="-5,328,28,-7" Foreground="White" FontSize="24" FontWeight="Bold"></Label>
+        <Label Content="Player 2:" Margin="134,328,188,7" Foreground="White" FontSize="24" FontWeight="Bold" RenderTransformOrigin="0.955,0.639" Grid.Column="1"/>
+
+    </Grid>
+
+
+
+
+</Window>
